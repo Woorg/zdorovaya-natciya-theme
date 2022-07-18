@@ -1,0 +1,71 @@
+
+mixin nav(data)
+    nav.nav&attributes(attributes)
+
+        button.nav__trigger
+            != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
+            != pugHelpers.Icon.call(locals, {iconName: 'menu-icon',className: 'nav__menu-icon'})
+
+        - var navList = data;
+
+        ul.nav__list
+
+            each item, index in navList
+
+                - var subnavList = item.subnavList
+                - var itemClass = subnavList ? 'nav__item  nav__item_subnav' : 'nav__item';
+                - var itemClassMod = item.itemClassMod;
+
+                li(class=`${itemClass} ${itemClassMod}`)
+
+                    a.nav__link(href=item.href)
+                        span.nav__link-text #{item.title}
+
+                    if subnavList
+
+                        ul.nav__list-sub.subnav
+                            each subnavItem in subnavList
+
+                                li.subnav__item
+                                    a.subnav__link(href=subnavItem.href) #{subnavItem.title}
+
+
+        .nav__controls
+            a.nav__lang(href="/index-lang-eng.html") Eng
+            a.nav__contact.button.button_stroke(href="#request") Написать нам
+
+
+mixin nav-en(data)
+    nav.nav&attributes(attributes)
+
+        button.nav__trigger
+            != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'nav__close-icon'})
+            != pugHelpers.Icon.call(locals, {iconName: 'menu-icon',className: 'nav__menu-icon'})
+
+        - var navList = data;
+
+        ul.nav__list
+
+            each item, index in navList
+
+                - var subnavList = item.subnavList
+                - var itemClass = subnavList ? 'nav__item  nav__item_subnav' : 'nav__item';
+                - var itemClassMod = item.itemClassMod;
+
+                li(class=`${itemClass} ${itemClassMod}`)
+
+                    a.nav__link(href=item.href)
+                        span.nav__link-text #{item.title}
+
+                    if subnavList
+
+                        ul.nav__list-sub.subnav
+                            each subnavItem in subnavList
+
+                                li.subnav__item
+                                    a.subnav__link(href=subnavItem.href) #{subnavItem.title}
+
+
+        .nav__controls
+            a.nav__lang(href="/index.html") Ru
+            a.nav__contact.button.button_stroke(href="#request") Write to us

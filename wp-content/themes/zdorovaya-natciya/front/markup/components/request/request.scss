@@ -1,0 +1,419 @@
+.request {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 35px;
+    overflow: hidden;
+    &:after {
+        z-index: -1;
+        position: absolute;
+        top: 26px;
+        bottom: 33px;
+        left: 0;
+        width: 100%;
+        content: '';
+        background-color: #3976f4;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            bottom: 36px;
+
+        }
+
+    }
+
+    &__icon {
+        z-index: 1;
+        position: absolute;
+    }
+
+    &__icon_first {
+        top: 0;
+        left: -20px;
+        width: 51px;
+        height: 51px;
+        color: #f4c006;
+        @include mq($small) {
+            left: -12px;
+        }
+
+        @include mq($medium) {
+
+        }
+
+    }
+
+    &__icon_second {
+        right: -46px;
+        bottom: -11px;
+        width: 115px;
+        @include mq($small) {
+            right: -52px;
+            bottom: -8px;
+            width: 115px;
+        }
+
+        @include mq($medium) {
+            right: -67px;
+            bottom: -18px;
+            width: 210px;
+
+        }
+
+    }
+
+    &__container {
+        padding-top: 52px;
+        padding-bottom: 52px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        color: #fff;
+
+        @include mq($small) {
+            flex-wrap: nowrap;
+        }
+
+        @include mq($medium) {
+            padding-top: 74px;
+            padding-bottom: 78px;
+            align-items: center;
+        }
+
+    }
+
+    &__entry {
+        margin-bottom: 25px;
+        padding-right: 40px;
+
+        width: 100%;
+
+        @include mq($small) {
+            margin-bottom: 0;
+            padding-right: 80px;
+            max-width: 42.2%;
+
+        }
+
+        @include mq($medium) {
+            padding-right: 0;
+            // max-width: 500px;
+            max-width: 42.4%;
+
+        }
+
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        color: #fff;
+        font-size: 22px;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-bottom: 15px;
+            @include font-size(50px);
+        }
+
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            font-size: 14px;
+
+        }
+
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    &__form {
+        max-width: 680px;
+        width: 100%;
+
+        @include mq($small) {
+            margin-top: 4px;
+        }
+
+        @include mq($medium) {
+            margin-top: 0;
+        }
+    }
+
+}
+
+.request_second {
+    margin-bottom: -36px;
+    padding-top: 50px;
+    padding-bottom: 36px;
+    overflow: inherit;
+    &:after {
+        top: 50px;
+        bottom: 36px;
+    }
+    .request__container {
+        padding-top: 30px;
+        height: 530px;
+        @include mq($small) {
+            padding-top: 70px;
+            height: 260px;
+
+        }
+
+        @include mq($medium) {
+            padding-top: 80px;
+            height: 380px;
+
+        }
+
+    }
+
+
+    .request__entry {
+        padding-right: 8px;
+        @include mq($small) {
+            padding-right: 30px;
+            max-width: 51.4%;
+
+        }
+
+        @include mq($medium) {
+            padding-right: 80px;
+            max-width: 600px;
+            max-width: 50.8%;
+        }
+
+    }
+
+    .request__title {
+        margin-bottom: 15px;
+        font-size: 22px;
+        @include mq($small) {
+            margin-bottom: 20px;
+            font-size: 25px;
+
+        }
+
+        @include mq($medium) {
+            @include font-size(50px);
+        }
+
+    }
+
+    .request__text {
+        max-width: 450px;
+        font-size: 12px;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            font-size: 16px;
+
+        }
+
+        p {
+            margin-bottom: 15px;
+            @include mq($small) {
+                margin-bottom: 20px;
+            }
+
+            @include mq($medium) {
+
+            }
+
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .request__form-w {
+        position: relative;
+        // bottom: -50px;
+        top: 50px;
+        max-width: 575px;
+        min-height: 356px;
+        background-color: #fff;
+        color: #191c1f;
+        border-radius: 5px;
+
+        @include mq($small) {
+            top: -98px;
+            max-width: 51.4%;
+            height: 325px;
+
+        }
+
+        @include mq($medium) {
+            top: -10px;
+            min-height: 466px;
+            height: auto;
+        }
+
+    }
+
+    .request__form {
+        z-index: 1;
+        position: relative;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+
+        @include mq($small) {
+            padding-top: 24px;
+            // max-width: 51.4%;
+
+        }
+
+        @include mq($medium) {
+            padding-top: 70px;
+            padding-right: 70px;
+            padding-bottom: 70px;
+            padding-left: 70px;
+        }
+
+    }
+
+    .request__form-title {
+        margin-bottom: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: normal;
+
+        @include mq($small) {
+            font-size: 16px;
+
+        }
+
+        @include mq($medium) {
+            font-size: 22px;
+        }
+
+    }
+
+    .request__form-text {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.4;
+
+        @include mq($small) {
+            padding-right: 60px;
+
+        }
+
+        @include mq($medium) {
+            padding-right: 0;
+            font-size: 14px;
+        }
+
+    }
+
+    .request__form-object {
+        margin-top: 15px;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-top: 40px;
+        }
+
+    }
+
+    .request__icon {
+        z-index: 0;
+    }
+
+    .request__icon_first {
+        top: -62px;
+        right: -30px;
+        left: auto;
+        width: 104px;
+        height: 115px;
+        display: none;
+        @include mq($small) {
+            display: block;
+        }
+
+        @include mq($medium) {
+            top: -86px;
+            right: -60px;
+            left: auto;
+            width: 164px;
+            height: 175px;
+        }
+
+    }
+
+    .request__icon_second {
+        right: auto;
+        bottom: -9px;
+        left: -67px;
+        width: 119px;
+        height: 102px;
+        display: none;
+
+        @include mq($small) {
+            display: block;
+        }
+
+        @include mq($medium) {
+            right: auto;
+            bottom: -4px;
+            left: -138px;
+            width: 209px;
+            height: 172px;
+        }
+
+    }
+
+    .request__icon_third {
+        top: -266px;
+        right: -30px;
+        width: 59px;
+        height: 86px;
+
+        @include mq($small) {
+            display: none;
+        }
+
+    }
+
+    .request__icon_fourth {
+        top: -50px;
+        left: -28px;
+        width: 169px;
+        height: 147px;
+
+        @include mq($small) {
+            display: none;
+        }
+    }
+
+}

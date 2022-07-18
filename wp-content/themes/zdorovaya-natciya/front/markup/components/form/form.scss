@@ -1,0 +1,209 @@
+.form {
+  position: relative;
+  padding-bottom: 30px;
+  text-align: center;
+  // &__row {
+  //   margin-bottom: 14px;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+
+  //   @include mq($small) {
+  //     flex-wrap: nowrap;
+  //   }
+
+  //   @include mq($medium) {
+  //   }
+
+  //   &:last-child {
+  //     margin-bottom: 0;
+
+  //     @include mq($medium) {
+  //       margin-bottom: 0;
+  //     }
+  //   }
+  // }
+
+  &__field {
+    position: relative;
+    margin-bottom: 77px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    @include mq($small) {
+      // margin-right: 20px;
+      // margin-bottom: 0;
+      // width: auto;
+    }
+
+    @include mq($medium) {}
+
+    &:last-child {
+      margin-bottom: 0;
+      // margin-right: 0;
+      // margin-bottom: 0;
+    }
+
+    .just-validate-error-label {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      font-size: 12px;
+
+      @include mq($medium) {
+        font-size: 13px;
+
+      }
+    }
+
+  }
+
+  &__input {
+    @include resetbutton();
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    text-align: left;
+    color: #000;
+    caret-color: #000;
+
+    @include placeholder() {
+      color: #797772;
+      letter-spacing: 0.45px;
+      caret-color: #797772;
+    }
+
+    &:placeholder-shown {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+    }
+
+
+
+    @include mq($small) {
+
+    }
+
+    @include mq($medium) {
+
+
+    }
+
+    &:focus,
+    &:focus-within {
+      box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.09);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    &.just-validate-error-field {
+      border-bottom: 1px solid red;
+
+      @include placeholder() {
+        color: red;
+      }
+
+    }
+
+
+  }
+
+
+  // &__bottom {
+  //   margin-top: 50px;
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+
+  //   @include mq($small) {
+  //     margin-top: 24px;
+  //     flex-wrap: nowrap;
+  //   }
+
+  //   @include mq($medium) {
+  //     margin-top: 40px;
+  //   }
+  // }
+
+  .form__submit {
+    margin-right: auto;
+    margin-left: auto;
+    // width: 100%;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    max-width: 250px;
+    height: 58px;
+    width: auto;
+    background-color: #ff4848;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+
+    @include mq($small) {
+      margin-top: 60px;
+
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+
+  // &__note {
+  //   margin-top: 13px;
+  //   margin-left: 0;
+  //   padding-right: 20px;
+  //   padding-left: 20px;
+  //   color: rgba(255, 255, 255, .7);
+  //   font-size: 9px;
+  //   font-weight: normal;
+  //   line-height: 1.4;
+  //   text-align: center;
+
+  //   @include mq($small) {
+  //     margin-top: 0;
+  //     margin-left: 30px;
+  //     padding-right: 0;
+  //     padding-left: 0;
+  //     text-align: left;
+  //   }
+
+  //   @include mq($medium) {
+  //     margin-left: 15px;
+  //     font-size: 12px;
+
+  //   }
+
+  // }
+
+  &__send-message {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+
+    @include mq($medium) {
+      font-size: 14px;
+
+    }
+
+  }
+
+  .wpcf7-spinner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+    url('../fonts/hinted-subset-Manrope-Medium.woff2') format('woff2'),
+    url('../fonts/hinted-subset-Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Semibold'), local('Manrope-Semibold'),
+    url('../fonts/hinted-subset-Manrope-Semibold.woff2') format('woff2'),
+    url('../fonts/hinted-subset-Manrope-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+    url('../fonts/hinted-subset-Manrope-Regular.woff2') format('woff2'),
+    url('../fonts/hinted-subset-Manrope-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: local('Playfair Display Medium'), local('PlayfairDisplay-Medium'),
+    url('../fonts/hinted-subset-PlayfairDisplay-Medium.woff2') format('woff2'),
+    url('../fonts/hinted-subset-PlayfairDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/hinted-subset-Montserrat-Regular.woff2') format('woff2'),
+    url('../fonts/hinted-subset-Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('../fonts/hinted-subset-Montserrat-Medium.woff2') format('woff2'),
+    url('../fonts/hinted-subset-Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+$montserrat: 'Montserrat', Helvetica, Arial, sans-serif;
+$manrope: 'Manrope', Helvetica, Arial, sans-serif;
+$playfair: 'Playfair Display', Helvetica, Arial, sans-serif;

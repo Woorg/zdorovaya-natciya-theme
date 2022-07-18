@@ -1,0 +1,374 @@
+.cases {
+    overflow: hidden;
+    &__container {
+        padding-top: 20px;
+        padding-bottom: 58px;
+        @include mq($small) {
+            padding-top: 50px;
+            padding-bottom: 113px;
+        }
+        @include mq($medium) {
+            padding-top: 80px;
+            padding-bottom: 160px;
+        }
+    }
+    &__title {
+        margin-bottom: 30px;
+        @include mq($small) {
+            margin-bottom: 0;
+        }
+        @include mq($medium) {
+            margin-bottom: 50px;
+        }
+    }
+    &__slider {
+        position: relative;
+        padding-bottom: 50px;
+        @include mq($small) {
+            margin-top: -8px;
+            padding-top: 67px;
+            padding-bottom: 0;
+            // overflow: hidden;
+        }
+        @include mq($medium) {
+            margin-top: 0;
+            // margin-right: -10px;
+            // margin-left: -10px;
+            padding-top: 0;
+            // overflow: initial;
+        }
+
+        @include mq($large) {
+            margin-right: -20px;
+            margin-left: -20px;
+            overflow: initial;
+
+        }
+
+    }
+    &__icon {
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 62px);
+        width: 88px;
+        height: 116px;
+        transform: translateX(-50%);
+        @include mq($small) {
+        }
+        @include mq($medium) {
+            top: -120px;
+            left: calc(50% + 15px);
+            width: 158px;
+            height: 205px;
+        }
+    }
+    &__slide {
+        @include mq($small) {
+        }
+        @include mq($medium) {
+        }
+        @include mq($large) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        &_expanded {
+            min-height: 900px;
+            @include mq($small) {
+                min-height: 100%;
+            }
+        }
+    }
+    .swiper-slide-next,
+    .swiper-slide-prev,
+    .swiper-slide-duplicate {
+        .cases__item {
+            // padding-top: 20px;
+            // padding-bottom: 20px;
+            // height: 92%;
+            border-radius: 5px;
+            @include mq($small) {
+                // padding-top: 0;
+                // padding-bottom: 0;
+                // height: auto;
+            }
+            @include mq($medium) {
+                display: none;
+            }
+        }
+
+        .cases__thumb {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            right: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            @include mq($small) {
+            }
+            @include mq($medium) {
+                display: flex;
+                height: 554px;
+            }
+            &:after {
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                content: "";
+                height: 198px;
+                background: #fff;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .swiper-slide-next {
+        .cases__thumb {
+            justify-content: flex-start;
+        }
+    }
+
+
+    .swiper-slide-prev {
+        .cases__thumb {
+            justify-content: flex-end;
+        }
+
+    }
+
+
+    &__thumb {
+        display: none;
+        height: 0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        overflow: hidden;
+        @include mq($small) {
+            margin-left: -1px;
+            margin-right: -1px;
+            flex-wrap: nowrap;
+        }
+        @include mq($medium) {
+            overflow: initial;
+        }
+    }
+
+    &__side {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px 5px 0 0;
+        // overflow: hidden;
+        @include mq($small) {
+            margin-right: 1px;
+            margin-left: 1px;
+            max-width: 48.5%;
+            min-height: 500px;
+            height: 100%;
+            border-radius: 5px;
+        }
+        @include mq($medium) {
+            padding-top: 40px;
+            padding-right: 40px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            max-width: 50.4%;
+            min-height: 650px;
+            overflow: initial;
+        }
+        &:nth-child(2) {
+            padding-top: 26px;
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+            @include mq($small) {
+                max-width: 50.8%;
+                border-radius: 5px;
+            }
+            @include mq($medium) {
+                padding-top: 56px;
+                padding-left: 40px;
+                max-width: 49.2%;
+            }
+        }
+    }
+    &__item-title {
+        margin-bottom: 17px;
+        color: #53a545;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.1;
+        @include mq($small) {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        @include mq($medium) {
+            font-size: 35px;
+        }
+    }
+    &__item-subtitle {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        @include mq($small) {
+            margin-bottom: 15px;
+        }
+        @include mq($medium) {
+            font-size: 16px;
+        }
+    }
+    &__item-text {
+        margin-bottom: 16px;
+        padding-right: 20px;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.4;
+        @include mq($small) {
+        }
+        @include mq($medium) {
+            margin-bottom: 40px;
+            padding-right: 96px;
+            font-size: 14px;
+        }
+    }
+    &__item-image {
+        margin-top: -20px;
+        margin-left: -90px;
+        margin-right: 27px;
+        @include mq($small) {
+            margin-top: -10px;
+            margin-left: -70px;
+            margin-right: 20px;
+        }
+        @include mq($medium) {
+            margin-top: 0;
+            margin-left: -80px;
+            margin-right: 0;
+        }
+    }
+    &__list {
+        font-size: 12px;
+        line-height: 1.4;
+        @include mq($small) {
+        }
+        @include mq($medium) {
+            font-size: 14px;
+        }
+        &_expanded {
+            .cases__list-item {
+                &:nth-child(n + 2) {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__list-trigger {
+        @include resetbutton();
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #3976f4;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.4;
+        @include mq($small) {
+            display: none;
+        }
+        &_active {
+            .cases__list-arrow {
+                transform: rotate(180deg)
+            }
+        }
+    }
+    &__list-arrow {
+        margin-left: 5px;
+        fill: transparent;
+    }
+    &__list-item {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 13px;
+        &:before {
+            position: absolute;
+            top: 6px;
+            left: 0;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: #3976f4;
+            border-radius: 50%;
+        }
+        &:nth-child(n + 2) {
+            display: none;
+            @include mq($small) {
+                display: block;
+            }
+        }
+    }
+    &__more {
+        margin-top: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100%;
+        height: 40px;
+        background-color: #3976f4;
+        color: #fff;
+        font-family: $montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: -0.06px;
+        @include mq($small) {
+            padding-right: 30px;
+            padding-left: 30px;
+            width: auto;
+            background: transparent;
+            color: #3976f4;
+        }
+        @include mq($medium) {
+            margin-top: 30px;
+            padding-right: 32px;
+            padding-left: 32px;
+            height: 48px;
+            font-size: 16px;
+            letter-spacing: -0.07px;
+        }
+        &:hover {
+            background-color: transparent;
+            color: #3976f4;
+            @include mq($small) {
+                background-color: #3976f4;
+                color: #fff;
+            }
+        }
+    }
+    &__pagination {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .swiper-pagination-bullet {
+        margin-right: 7px;
+        width: 6px;
+        height: 6px;
+        background-color: #3976f4;
+        opacity: 0.4;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #3976f4;
+        opacity: 1;
+    }
+}

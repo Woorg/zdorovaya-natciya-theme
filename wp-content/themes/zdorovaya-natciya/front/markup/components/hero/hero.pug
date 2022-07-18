@@ -1,0 +1,22 @@
+mixin hero(data)
+    section.hero
+        .hero__container.container
+
+            h1.hero__title.title <span>Email-маркетинг<i>,</i></span> который работает
+            .hero__text
+                p Выстраиваем email-маркетинг под ключ, учим бренды продавать посредством email, строим автоворонки. Работаем со всеми сегментами бизнеса.
+
+            a.hero__button.button(href="#request") Написать нам
+
+        picture.hero__image
+
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-desktop@2x.webp" media="(min-width: 960px)")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-desktop@2x.png" media="(min-width: 960px)")
+
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+
+            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-mob@2x.webp" )
+            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-mob@2x.png" )
+
+            img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/hero-bg-desktop.png" )

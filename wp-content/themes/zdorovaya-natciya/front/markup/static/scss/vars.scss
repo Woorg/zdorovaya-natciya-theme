@@ -1,0 +1,27 @@
+// File for scss-vars.
+
+$title-margin: 35px;
+
+$padding-section: 95px;
+$padding-section-half: 45px;
+
+$small: 640px;
+$medium: 960px;
+$large: 1200px;
+$xlarge: 1440px;
+
+$white: #ffffff;
+$blue: #086de0;
+$black: #000000;
+$dark: #334756;
+$nav-link-color: #f2f2f2;
+$gray: #f6f6f6;
+
+:root {
+  --white: #{$white};
+  --blue: #{$blue};
+  --black: #{$black};
+  --dark: #{$dark};
+  --nav-link-color: #{$nav-link-color};
+  --gray: #{$gray};
+}

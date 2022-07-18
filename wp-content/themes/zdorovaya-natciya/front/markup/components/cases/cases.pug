@@ -1,0 +1,262 @@
+mixin cases(data)
+    section.cases
+        .cases__container.container
+            h2.cases__title.title.title_reg_sec Наши кейсы
+
+            .cases__slider.swiper
+
+                picture.cases__icon
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/cases-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/cases-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/cases-icon@2x.png" width="158" height="205" )
+
+                .swiper-wrapper
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker
+
+                                .cases__item-text
+                                    p Международная компания по продаже товаров для сада и огорода. Основу продукции составляют семена и саженцы различных садовых культур
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle Что сделано
+
+                                .cases__item-text
+                                    p Запущен геймификационный марафон, состоящий из трех игр, длительностью по одной неделе каждый
+
+                                h4.cases__item-subtitle Результат нашей работы
+
+                                ul.cases__list
+                                    li.cases__list-item Первая игра: за время акции коэффициент транзакций вырос на 78%, а среднедневная выручка — на 43% по сравнению с аналогичным периодом.
+
+                                    li.cases__list-item Вторая игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 42%, а доход на 64%.
+
+                                    li.cases__list-item Третья игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 35%, а доход на 40%.
+
+
+                                button.cases__list-trigger(type="button") Показать все
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") Подробнее об этом и других кейсах
+
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-next-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-next-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/case-next-icon@2x.png" width="71" height="30" )
+
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker
+
+                                .cases__item-text
+                                    p Международная компания по продаже товаров для сада и огорода. Основу продукции составляют семена и саженцы различных садовых культур
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle Что сделано
+
+                                .cases__item-text
+                                    p Запущен геймификационный марафон, состоящий из трех игр, длительностью по одной неделе каждый
+
+                                h4.cases__item-subtitle Результат нашей работы
+
+                                ul.cases__list
+                                    li.cases__list-item Первая игра: за время акции коэффициент транзакций вырос на 78%, а среднедневная выручка — на 43% по сравнению с аналогичным периодом.
+
+                                    li.cases__list-item Вторая игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 42%, а доход на 64%.
+
+                                    li.cases__list-item Третья игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 35%, а доход на 40%.
+
+
+                                button.cases__list-trigger(type="button") Показать все
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") Подробнее об этом и других кейсах
+
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-next-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-next-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/case-next-icon@2x.png" width="71" height="30" )
+
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker
+
+                                .cases__item-text
+                                    p Международная компания по продаже товаров для сада и огорода. Основу продукции составляют семена и саженцы различных садовых культур
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle Что сделано
+
+                                .cases__item-text
+                                    p Запущен геймификационный марафон, состоящий из трех игр, длительностью по одной неделе каждый
+
+                                h4.cases__item-subtitle Результат нашей работы
+
+                                ul.cases__list
+                                    li.cases__list-item Первая игра: за время акции коэффициент транзакций вырос на 78%, а среднедневная выручка — на 43% по сравнению с аналогичным периодом.
+
+                                    li.cases__list-item Вторая игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 42%, а доход на 64%.
+
+                                    li.cases__list-item Третья игра: коэффициент транзакций за время действия акции по сравнению с аналогичным периодом прошлого года вырос на 35%, а доход на 40%.
+
+
+                                button.cases__list-trigger(type="button") Показать все
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") Подробнее об этом и других кейсах
+
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-next-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-next-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/case-next-icon@2x.png" width="71" height="30" )
+
+                .cases__pagination.swiper-pagination
+                //- .swiper-button-prev
+                //- .swiper-button-next
+
+
+mixin cases-eng(data)
+    section.cases
+        .cases__container.container
+            h2.cases__title.title.title_reg_sec Our case studies
+
+            .cases__slider.swiper
+
+                picture.cases__icon
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/cases-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/cases-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/general/cases-icon@2x.png" width="158" height="205" )
+
+                .swiper-wrapper
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker
+
+                                .cases__item-text
+                                    p An international company providing a wide range  of garden goods. The main products are seeds and seedlings of various garden crops
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle What was done
+
+                                .cases__item-text
+                                    p A gamification marathon was launched and it consisted of three games. Each game lasted for a week
+
+                                h4.cases__item-subtitle The result of our work
+
+                                ul.cases__list
+                                    li.cases__list-item First game: during the promotion, the transaction rate increased by 78%, and the average daily revenue increased by 43% compared to the same period.
+                                    li.cases__list-item Second game: the transaction rate over the period of the promotion increased by 42% compared to the same period last year, and income by 64%.
+                                    li.cases__list-item Third game: the transaction rate over the period of the promotion increased by 35% compared to the same period last year, and income by 40%.
+
+                                button.cases__list-trigger(type="button") Show all
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") More about this and other cases
+
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-next-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-next-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/general/case-next-icon@2x.png" width="71" height="30" )
+
+
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker 2
+
+                                .cases__item-text
+                                    p An international company providing a wide range of garden goods. The main products are seeds and seedlings of various garden crops
+
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle What was done
+
+                                .cases__item-text
+                                    p A gamification marathon was launched and it consisted of three games. Each game lasted for a week
+
+                                h4.cases__item-subtitle The result of our work
+
+                                ul.cases__list
+                                    li.cases__list-item First game: during the promotion, the transaction rate increased by 78%, and the average daily revenue increased by 43% compared to the same period.
+                                    li.cases__list-item Second game: the transaction rate over the period of the promotion increased by 42% compared to the same period last year, and income by 64%.
+                                    li.cases__list-item Third game: the transaction rate over the period of the promotion increased by 35% compared to the same period last year, and income by 40%.
+
+                                button.cases__list-trigger(type="button") Show all
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") More about this and other cases
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-prev-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-prev-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/general/case-prev-icon@2x.png" width="71" height="30" )
+
+                    .cases__slide.swiper-slide
+                        .cases__item
+                            .cases__side
+                                h3.cases__item-title Bekker 3
+
+                                .cases__item-text
+                                    p An international company providing a wide range of garden goods. The main products are seeds and seedlings of various garden crops
+
+
+                                picture.cases__item-image
+                                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/content/case-1-image@2x.webp")
+                                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/content/case-1-image@2x.png")
+                                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/content/case-1-image@2x.png" width="479" height="391" )
+                            .cases__side
+                                h4.cases__item-subtitle What was done
+
+                                .cases__item-text
+                                    p A gamification marathon was launched and it consisted of three games. Each game lasted for a week
+
+                                h4.cases__item-subtitle The result of our work
+
+                                ul.cases__list
+                                    li.cases__list-item First game: during the promotion, the transaction rate increased by 78%, and the average daily revenue increased by 43% compared to the same period.
+                                    li.cases__list-item Second game: the transaction rate over the period of the promotion increased by 42% compared to the same period last year, and income by 64%.
+                                    li.cases__list-item Third game: the transaction rate over the period of the promotion increased by 35% compared to the same period last year, and income by 40%.
+
+                                button.cases__list-trigger(type="button") Show all
+                                    != pugHelpers.Icon.call(locals, {iconName: 'arrow-down', className: 'cases__list-arrow'})
+
+                                a.cases__more.button.button_stroke(href="#") More about this and other cases
+
+                        .cases__thumb
+                            picture.cases__item-thumb
+                                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/case-next-icon@2x.webp")
+                                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/case-next-icon@2x.png")
+                                img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Images", data-src="static/img/general/case-next-icon@2x.png" width="71" height="30" )
+
+
+                .cases__pagination.swiper-pagination
+                //- .swiper-button-prev
+                //- .swiper-button-next

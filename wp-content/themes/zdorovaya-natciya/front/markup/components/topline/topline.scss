@@ -1,0 +1,108 @@
+.topline {
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  left: 0;
+
+  @include mq($small) {
+
+  }
+
+  @include mq($medium) {
+    top: 75px;
+  }
+
+  .topline__container {
+    max-width: 1720px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__contacts-w {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mq($small) {
+      max-width: 545px;
+    }
+
+    @include mq($medium) {
+      max-width: 967px;
+
+    }
+
+
+  }
+
+  &__contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    letter-spacing: 0.45px;
+
+    @include mq($small) {
+      justify-content: flex-end;
+      max-width: 326px;
+    }
+
+    @include mq($medium) {
+      flex-wrap: nowrap;
+      max-width: 440px;
+      // justify-content: space-between;
+
+
+    }
+  }
+
+  &__address,
+  &__phone {
+    white-space: nowrap;
+  }
+
+  &__address {
+    // @include margin-right(143px);
+  }
+
+  &__phone {
+    @include margin-left(30px);
+    &:hover {
+      color: lighten(#000000, 30);
+      @include tr(.3s ease);
+    }
+
+  }
+
+  .topline__social {
+    display: none;
+
+    @include mq($small) {
+
+    }
+
+    @include mq($large) {
+      display: flex;
+    }
+
+  }
+
+  &__button {
+    cursor: pointer;
+
+    @include mq($small) {
+      @include margin-left(30px);
+    }
+
+    @include mq($medium) {
+      @include margin-left(45px);
+    }
+
+
+  }
+
+}

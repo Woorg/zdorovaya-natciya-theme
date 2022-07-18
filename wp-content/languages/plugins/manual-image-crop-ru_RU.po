@@ -1,0 +1,197 @@
+# Translation of Plugins - Manual Image Crop - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Manual Image Crop - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-12-15 06:56:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Manual Image Crop - Stable (latest release)\n"
+
+#: lib/ManualImageCropEditorWindow.php:31
+msgid "Pick the image size:"
+msgstr "Выберите размер изображения"
+
+#: lib/ManualImageCropEditorWindow.php:44
+#: lib/ManualImageCropSettingsPage.php:133
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: lib/ManualImageCropEditorWindow.php:45
+#: lib/ManualImageCropSettingsPage.php:134
+msgid "Medium"
+msgstr "Средний"
+
+#: lib/ManualImageCropEditorWindow.php:47
+#: lib/ManualImageCropSettingsPage.php:136
+msgid "Full Size"
+msgstr "Полный"
+
+#: lib/ManualImageCropEditorWindow.php:166
+msgid "Original picture dimensions:"
+msgstr "Оригинальный размер изображения"
+
+#: lib/ManualImageCropEditorWindow.php:181
+msgid "New image:"
+msgstr "Новое изоражение:"
+
+#: lib/ManualImageCropEditorWindow.php:190
+msgid "Previous image:"
+msgstr "Предыдущее изображение:"
+
+#: lib/ManualImageCropEditorWindow.php:207
+msgid "Target JPEG Quality"
+msgstr "Качество JPEG"
+
+#: lib/ManualImageCropEditorWindow.php:208
+#: lib/ManualImageCropSettingsPage.php:175
+msgid "100 (best quality, biggest file)"
+msgstr "100 (лучшее качество, наибольший размер)"
+
+#: lib/ManualImageCropEditorWindow.php:209
+#: lib/ManualImageCropSettingsPage.php:176
+msgid "80 (very high quality)"
+msgstr "80 (очень высокое)"
+
+#: lib/ManualImageCropEditorWindow.php:210
+#: lib/ManualImageCropSettingsPage.php:177
+msgid "70 (high quality)"
+msgstr "70 (высокое)"
+
+#: lib/ManualImageCropEditorWindow.php:211
+#: lib/ManualImageCropSettingsPage.php:178
+msgid "60 (good)"
+msgstr "60 (хорошее)"
+
+#: lib/ManualImageCropEditorWindow.php:212
+#: lib/ManualImageCropSettingsPage.php:179
+msgid "50 (average)"
+msgstr "50 (среднее)"
+
+#: lib/ManualImageCropEditorWindow.php:213
+#: lib/ManualImageCropSettingsPage.php:180
+msgid "30 (low)"
+msgstr "30 (низкое)"
+
+#: lib/ManualImageCropEditorWindow.php:214
+#: lib/ManualImageCropSettingsPage.php:181
+msgid "10 (very low, smallest file)"
+msgstr "10 (очень низкое качество, наименьший размер)"
+
+#: lib/ManualImageCropEditorWindow.php:223
+msgid "Generate Retina/HiDPI (@2x):"
+msgstr "Генерировать Retina/HiDPI (@2x):"
+
+#: lib/ManualImageCropEditorWindow.php:234
+msgid "An Error has occured. Please try again or contact plugin's author."
+msgstr "Ошибка. Пожалуйста, попробуйте снова или обратитесь к автору плагина."
+
+#: lib/ManualImageCropEditorWindow.php:278
+msgid "Compatible"
+msgstr "Совместимость"
+
+#: lib/ManualImageCropEditorWindow.php:280
+msgid "Source too small"
+msgstr "Изображение слишком маленькое"
+
+#: lib/ManualImageCropSettingsPage.php:143
+msgid "Size"
+msgstr "Размер"
+
+#: lib/ManualImageCropSettingsPage.php:144
+msgid "Visible"
+msgstr "Видимость"
+
+#: lib/ManualImageCropSettingsPage.php:145
+msgid "Default JPEG Quality"
+msgstr "Качество JPEG по умолчанию"
+
+#: lib/ManualImageCropSettingsPage.php:171
+msgid "Yes"
+msgstr "Да"
+
+#: lib/ManualImageCropSettingsPage.php:172
+msgid "No"
+msgstr "Нет"
+
+#: manual-image-crop.php:68
+msgid "Settings"
+msgstr "Настройки"
+
+#: lib/ManualImageCrop.php:58
+msgid "Crop"
+msgstr "Кадрировать"
+
+#: lib/ManualImageCrop.php:67
+msgid "Crop featured image"
+msgstr "Кадрировать изображение записи"
+
+#: lib/ManualImageCrop.php:94 lib/ManualImageCrop.php:104
+#: lib/ManualImageCrop.php:131
+msgid "Crop Image"
+msgstr "Кадрировать изображение"
+
+#: lib/ManualImageCropEditorWindow.php:199
+msgid "Crop it!"
+msgstr "Кадрировать!"
+
+#: lib/ManualImageCropSettingsPage.php:94
+msgid "Crop sizes settings"
+msgstr "Настройки размеров кадрирования"
+
+#: lib/ManualImageCropSettingsPage.php:146
+msgid "Custom Label"
+msgstr "Настраиваемая этикетка"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/tomaszsita"
+msgstr "https://github.com/tomaszsita"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/tomaszsita/wp-manual-image-crop"
+msgstr "https://github.com/tomaszsita/wp-manual-image-crop"
+
+#: lib/ManualImageCropEditorWindow.php:46
+#: lib/ManualImageCropSettingsPage.php:135
+msgid "Large"
+msgstr "Большой"
+
+#. Author of the plugin/theme
+msgid "Tomasz Sita"
+msgstr "Tomasz Sita"
+
+#: lib/ManualImageCropEditorWindow.php:168
+msgid "Target picture dimensions:"
+msgstr "Размеры целевого изображения:"
+
+#. #-#-#-#-#  tmp-manual-image-crop.pot (Manual Image Crop 1.12)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: lib/ManualImageCrop.php:67 lib/ManualImageCrop.php:94
+#: lib/ManualImageCrop.php:104 lib/ManualImageCrop.php:131
+#: lib/ManualImageCropSettingsPage.php:46
+msgid "Manual Image Crop"
+msgstr "Ручное кадрирование изображения"
+
+#: lib/ManualImageCropSettingsPage.php:120
+msgid "Enter your settings below:"
+msgstr "Введите свои настройки ниже:"
+
+#: lib/ManualImageCropSettingsPage.php:45
+#: lib/ManualImageCropSettingsPage.php:61
+msgid "Manual Image Crop Settings"
+msgstr "Настройки кадрирования изображения вручную"
+
+#: lib/ManualImageCropEditorWindow.php:175
+msgid "Hard crop mode"
+msgstr "Режим жесткого кадрирования"
+
+#: lib/ManualImageCropEditorWindow.php:174
+msgid "Soft proportional crop mode"
+msgstr "Режим мягкого пропорционального кадрирования"
+
+#: lib/ManualImageCropEditorWindow.php:230
+msgid "The image has been cropped successfully"
+msgstr "Изображение успешно кадрировано"

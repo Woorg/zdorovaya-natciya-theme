@@ -1,0 +1,26 @@
+mixin header(data)
+    header.header&attributes(attributes)
+        .header__container.container
+
+            a.header__logo.logo(href="#")
+                //- != pugHelpers.Icon.call(locals, {iconName: 'logo', className: 'logo__icon'})
+
+            +nav(nav.primaryListRu).header__nav.nav_primary
+
+            .header__controls
+                a.header__lang(href="/index-lang-eng.html") Eng
+                a.header__contact.button.button_stroke(href="#request") Написать нам
+
+
+            != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon'})
+            != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'social__icon'})
+            != pugHelpers.Icon.call(locals, {iconName: 'whatsapp-icon', className: 'social__icon'})
+
+
+
+            //- != pugHelpers.Icon.call(locals, {iconName: 'phone-icon', className: 'social__icon'})
+
+            //- != pugHelpers.Icon.call(locals, {iconName: 'marker-icon', className: 'social__icon'})
+
+
+            //- != pugHelpers.Icon.call(locals, {iconName: 'close-icon', className: 'social__icon'})

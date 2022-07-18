@@ -1,0 +1,177 @@
+// Common styles of the project
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  font-display: swap;
+  font-family: $manrope;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+
+  &__wrapper {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    overflow: hidden;
+  }
+
+}
+
+.page_nav_open {
+  overflow-y: hidden;
+
+  .header__logo {
+    z-index: 2;
+  }
+  .nav_primary {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nav__trigger {
+    z-index: 2;
+    position: absolute;
+    top: 67px;
+    right: 30px;
+
+  }
+
+  .nav__list {
+    padding-top: 90px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav__link {
+    padding-left: 24px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
+
+  @include mq($small) {
+
+  }
+
+  @include mq($large) {
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 1530px;
+  }
+}
+
+.main {
+  position: relative;
+
+  .main__container {
+    padding-top: 267px;
+    padding-bottom: 76px;
+    max-width: 1720px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include mq($small) {
+      padding-bottom: 157px;
+
+    }
+
+    @include mq($medium) {
+      padding-top: 180px;
+      padding-bottom: 115px;
+
+    }
+  }
+
+  &__entry {
+    // @include margin-left(374px);
+    max-width: 804px;
+    width: 100%;
+    flex-shrink: 1;
+    text-align: left;
+
+    @include mq($small) {
+      margin-left: 234px;
+    }
+
+    @include mq($medium) {
+      margin-left: 374px;
+    }
+
+  }
+}
+
+
+img.lazy {
+  max-width: 100%;
+  height: auto;
+
+  &.lazy {
+    opacity: 0;
+  }
+
+  &:not(.initial) {
+    @include tr(opacity .3s);
+  }
+
+  &.initial,
+  &.loaded,
+  &.error {
+    opacity: 1;
+  }
+
+}
+
+img.lazy:not([src]):not([srcset]) {
+  visibility: hidden;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  @include tr(.3s ease);
+
+  &:hover {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+// .mfp-bg {
+//     background-color: rgba(26, 26, 26, 1);
+//     opacity: 1;
+// }
+
+// button.mfp-close,
+// button.mfp-arrow {
+//     top: 10px;
+//     right: 10px;
+//     font-size: 70px;
+// }

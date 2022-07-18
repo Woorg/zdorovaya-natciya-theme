@@ -1,0 +1,31 @@
+mixin footer(data)
+    footer.footer&attributes(attributes)
+        .footer__container.container
+            //- .footer__side
+            a.footer__logo.logo(href="#")
+                //- != pugHelpers.Icon.call(locals, {iconName: 'logo-second', className: 'logo__icon'})
+
+            //- .footer__social.social
+            //-     ul.social__list
+            //-         li.social__item
+            //-             a.social__link(href="#")
+            //-                 != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'social__icon'})
+            //-         li.social__item
+            //-             a.social__link(href="#")
+            //-                 != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon'})
+            //-         li.social__item
+            //-             a.social__link(href="#")
+            //-                 != pugHelpers.Icon.call(locals, {iconName: 'fb-icon', className: 'social__icon'})
+
+            .footer__links
+                a.footer__link(href="tel:+74991104547") + 7 499 110-45-47
+                a.footer__link(href="mailto:mail@adcome.ru") mail@adcome.ru
+
+
+            .footer__address Москва, ул.Введенского, д. 23А, стр.3
+
+            //- .footer__contacts
+
+            .footer__bottom
+                a.footer__policy(href="#") Политика конфиденциальности
+                .footer__copyright(href="#") © 2022

@@ -1,0 +1,92 @@
+mixin steps(data)
+    section.steps&attributes(attributes)
+        .steps__container.container
+            h2.steps__title.title.title_reg Выстраиваем <span>эффективный</span> email-маркетинг в 4 шага
+            ul.steps__steps
+                li.steps__step.steps__step_1
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Подробный анализ
+                            .steps__step-text Погружаемся в специфику вашего бизнеса: изучаем ваш ассортимент, покупательскую активность, текущую воронку продаж и весь путь клиента от первого касания до покупки
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-side-icon', className: 'steps__side-icon'})
+
+
+                li.steps__step.steps__step_2
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Разрабатываем детальную стратегию email-маркетинга
+                            .steps__step-text Определим целевую аудиторию и разобьем ее на сегменты, которые будут получать персонализированные письма в нужный момент времени, составим контент-план, который будет состоять из регулярных и триггерных писем, что позволит всегда быть на связи с клиентами и вовлекать их в совершение покупок
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_3
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Внедряем разработанную стратегию
+                            .steps__step-text Разработаем шаблоны писем, создадим привлекательный дизайн в вашем фирменном стиле и сверстаем готовые письма, установим формы подписок на сайте, подготовим контент-план, интегрируем игровые механики
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_4
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Анализ результатов
+                            .steps__step-text Проанализируем результаты и подготовим отчетность в рамках каждого проекта по отдельным отчетным периодам
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-side-icon', className: 'steps__side-icon'})
+
+
+mixin steps-eng(data)
+    section.steps.steps_eng&attributes(attributes)
+        .steps__container.container
+            h2.steps__title.title.title_reg Building <span>effective</span> <br/>email marketing in 4 steps
+            ul.steps__steps
+                li.steps__step.steps__step_1
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Detailed analysis
+                            .steps__step-text We dive into the specifics of your business: we learn about your product, clients purchasing power, your current sales pipeline and the entire customer journey from the first connection to the purchase
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-side-icon', className: 'steps__side-icon'})
+
+
+                li.steps__step.steps__step_2
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Developing a detailed email marketing strategy
+                            .steps__step-text We will identify the target audience and break it down into segments that will receive personalized emails at the right time. We will create a content plan that will consist of regular and trigger emails, which will allow you to always stay in touch with customers and motivate them to buy
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_3
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Implementing the developed strategy
+                            .steps__step-text We will develop email templates, create an attractive design in your corporate style and lay out ready-to-send letters, install subscription forms on the site, prepare a content plan, and integrate game mechanics
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_4
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Analysis of results
+                            .steps__step-text We will analyze the results and prepare reports within each project for every reporting period
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-side-icon', className: 'steps__side-icon'})

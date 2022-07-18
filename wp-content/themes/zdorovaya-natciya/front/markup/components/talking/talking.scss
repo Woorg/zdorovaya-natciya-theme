@@ -1,0 +1,175 @@
+.talking {
+  z-index: 1;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 38px;
+  background-color: #fff5f5;
+
+  @include mq($small) {
+    padding-top: 4px;
+    padding-bottom: 86px;
+
+  }
+
+  @include mq($medium) {
+    padding-top: 45px;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    // padding-top: 70px;
+    // padding-bottom: 70px;
+
+    @include mq($small) {
+      padding-top: 82px;
+      padding-bottom: 82px;
+    }
+
+    @include mq($medium) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &::after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      bottom: 70px;
+      border: solid 2px #a0d7ff;
+      width: 100px;
+      display: none;
+      border-radius: 8px;
+
+      @include mq($medium) {
+        display: block;
+      }
+    }
+
+    &:first-child {
+      .talking__text {
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      &::after {
+        left: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      .talking__container {
+        // padding-left: 190px;
+        flex-direction: row-reverse;
+      }
+
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    &:last-child {
+      .talking__text {
+        p {
+          &:not(:last-child) {
+            margin-bottom: 26px;
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 55px;
+
+    @include mq($small) {
+      flex-wrap: nowrap;
+    }
+
+    @include mq($medium) {
+      // flex-direction: column;
+      // flex-wrap: nowrap;
+      gap: 0 82px;
+    }
+
+  }
+
+  &__entry {
+    max-width: 580px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+
+    @include mq($small) {
+      margin-bottom: 68px;
+    }
+
+  }
+
+  &__image {
+    margin-top: 72px;
+    width: 100%;
+    height: 311px;
+    display: block;
+    background-color: #bababa;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @include mq($small) {
+      margin-top: 0;
+      max-width: 360px;
+      height: 413px;
+    }
+
+    @include mq($medium) {
+      max-width: 695px;
+      height: 461px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    letter-spacing: 0.45px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+
+        @include mq($medium) {
+          margin-bottom: 32px;
+        }
+
+      }
+    }
+    strong {
+      color: #ff3d3d;
+      font-weight: 500;
+    }
+  }
+
+  &__button {
+    margin-top: 46px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+
+}

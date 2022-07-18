@@ -1,0 +1,159 @@
+mixin request(data)
+    .request&attributes(attributes)#request
+        .request__container.container
+            .request__entry
+                h2.request__title.title.title_reg Оставьте заявку
+                .request__text Мы свяжемся с вами и ответим на все вопросы
+
+            form.request__form.form.form_ru(action="#", method="post")
+                .form__row
+                    .form__field
+                        input.form__input(type="text" name="Имя" value="" placeholder="Имя" required)
+                    .form__field
+                        input.form__input.form__input_phone(type="text" name="Телефон" value="" placeholder="Телефон" required)
+
+                .form__bottom
+                    input.form__submit.button.button_filled_white(type="submit" value="Обсудить проект")
+
+                    .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
+
+
+
+        != pugHelpers.Icon.call(locals, {iconName: 'step-2-side-icon', className: 'request__icon request__icon_first'})
+
+        picture.request__icon.request__icon_second
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-icon@2x.webp")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-icon@2x.png")
+            img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-icon@2x.png")
+
+mixin request-eng(data)
+    .request&attributes(attributes)#request
+        .request__container.container
+            .request__entry
+                h2.request__title.title.title_reg Leave a request
+                .request__text We will get in touch with you and answer <br/> all your questions
+
+            form.request__form.form.form_en(action="#", method="post")
+                .form__row
+                    .form__field
+                        input.form__input(type="text" name="Name" value="" placeholder="Name" required)
+                    .form__field
+                        input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone number" required)
+
+                .form__bottom
+                    input.form__submit.button.button_filled_white(type="submit" value="Discuss your project")
+
+                    .form__note By clicking the "Discuss your project" button, <br/>you agree with the personal data processing policy.
+
+
+
+        != pugHelpers.Icon.call(locals, {iconName: 'step-2-side-icon', className: 'request__icon request__icon_first'})
+
+        picture.request__icon.request__icon_second
+            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-icon@2x.webp")
+            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-icon@2x.png")
+            img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-icon@2x.png")
+
+
+
+
+mixin request-second(data)
+    section.request.request_second&attributes(attributes)
+        .request__container.container
+            .request__entry
+                h2.request__title.title.title_reg Начнем?
+                .request__text
+                    p Давайте продумаем систему CRM-маркетинга, с которой вы повысите свою конкурентоспособность.
+                    p Email-коммуникация здесь — важнейшее звено.
+
+            .request__form-w
+
+                .request__form
+                    .request__form-title Оставьте заявку
+                    .request__form-text Мы свяжемся с вами и ответим на все вопросы
+
+                    form.request__form-object.form.form_second.form_second_ru(action="#", method="post" )
+                        .form__row
+                            .form__field
+                                input.form__input(type="text" name="Имя" value="" placeholder="Имя" required)
+                            .form__field
+                                input.form__input.form__input_phone(type="text" name="Телефон" value="" placeholder="Телефон" required)
+
+                        .form__bottom
+                            .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
+
+                            input.form__submit.button(type="submit" value="Обсудить проект")
+
+                picture.request__icon.request__icon_first
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-2-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-2-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-2-icon@2x.png" width="164" height="175")
+
+                picture.request__icon.request__icon_second
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-icon@2x.png" width="209" height="172")
+
+
+                picture.request__icon.request__icon_third
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-mob-1@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-mob-1@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-mob-1@2x.png" width="164" height="175")
+
+
+                picture.request__icon.request__icon_fourth
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-mob-2@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-mob-2@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-mob-2@2x.png" width="164" height="175")
+
+
+mixin request-second-eng(data)
+    section.request.request_second&attributes(attributes)
+        .request__container.container
+            .request__entry
+                h2.request__title.title.title_reg Should we start?
+                .request__text
+                    p Let's think through a CRM marketing system that will <br/>help you increase your competitiveness.
+
+                    p Email communication is the crucial link here.
+
+
+            .request__form-w
+
+                .request__form
+                    .request__form-title Leave a request
+                    .request__form-text We will get in touch with you and answer all your questions
+
+                    form.request__form-object.form.form_second.form_second_en(action="#", method="post")
+                        .form__row
+                            .form__field
+                                input.form__input(type="text" name="Name" value="" placeholder="Name" required)
+                            .form__field
+                                input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone number" required)
+
+                        .form__bottom
+                            .form__note By clicking the "Discuss your project" button, you agree to the personal data processing policy.
+
+                            input.form__submit.button(type="submit" value="Discuss your project")
+
+                picture.request__icon.request__icon_first
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-2-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-2-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Image", data-src="static/img/general/request-2-icon@2x.png" width="164" height="175")
+
+                picture.request__icon.request__icon_second
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-icon@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-icon@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Image", data-src="static/img/general/request-icon@2x.png" width="209" height="172")
+
+
+                picture.request__icon.request__icon_third
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-mob-1@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-mob-1@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Image", data-src="static/img/general/request-mob-1@2x.png" width="164" height="175")
+
+
+                picture.request__icon.request__icon_fourth
+                    source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/request-mob-2@2x.webp")
+                    source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/request-mob-2@2x.png")
+                    img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Image", data-src="static/img/general/request-mob-2@2x.png" width="164" height="175")

@@ -1,0 +1,8 @@
+body .editor-styles-wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body .editor-styles-wrapper .hero__entry {
+  margin-left: 0;
+}

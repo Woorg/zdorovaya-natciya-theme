@@ -1,0 +1,543 @@
+.steps {
+    overflow: hidden;
+    &__container {
+        padding-top: 58px;
+        padding-bottom: 15px;
+        font-family: $sfpro;
+        @include mq($small) {
+            padding-top: 80px;
+            padding-bottom: 83px;
+        }
+
+        @include mq($medium) {
+            padding-top: 130px;
+            padding-bottom: 84px;
+        }
+    }
+
+    &__title {
+        margin: auto;
+        margin-bottom: 48px;
+        max-width: 525px;
+        text-align: center;
+
+        @include mq($small) {
+            margin-bottom: 70px;
+            max-width: 525px;
+        }
+
+        @include mq($medium) {
+            max-width: 665px;
+        }
+    }
+
+    &__steps {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        counter-reset: count;
+
+        @include mq($small) {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+
+        @include mq($medium) {
+        }
+    }
+
+    &__step {
+        max-width: 680px;
+        width: 100%;
+        color: #fff;
+        counter-increment: count;
+
+        @include mq($small) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        @include mq($medium) {
+        }
+
+    }
+
+    &__w {
+        position: relative;
+        margin-bottom: 26px;
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+
+        @include mq($small) {
+            margin-bottom: 20px;
+            min-height: 295px;
+        }
+
+        @include mq($medium) {
+            padding-top: 37px;
+            padding-right: 26px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            min-height: 420px;
+        }
+
+    }
+
+    &__step_1 {
+
+        @include mq($small) {
+            max-width: 58.5%;
+        }
+
+        @include mq($medium) {
+        }
+
+        .steps__w {
+            background-image: linear-gradient(238deg, #00b0fc 100%, #0092fc 0%);
+
+            @include mq($small) {
+                min-height: 326px;
+            }
+
+            @include mq($medium) {
+                min-height: 420px;
+            }
+
+        }
+
+        .steps__side-icon {
+            top: 96px;
+            left: -40px;
+            width: 60px;
+            height: 60px;
+
+            @include mq($small) {
+                top: 72px;
+                left: -65px;
+                width: 110px;
+                height: 100px;
+            }
+
+            @include mq($medium) {
+                top: 128px;
+                left: -72px;
+                width: 117px;
+                height: 106px;
+            }
+
+        }
+
+        .steps__step-quant {
+            color: #019cfd;
+        }
+
+        .steps__step-icon {
+            position: relative;
+            top: 8px;
+            right: -32px;
+            margin-right: auto;
+            margin-bottom: 37px;
+            margin-left: auto;
+            width: 182px;
+            height: 172px;
+            @include mq($small) {
+                top: 8px;
+                right: -32px;
+                margin-bottom: 0;
+
+                width: 182px;
+                height: 172px;
+            }
+
+            @include mq($medium) {
+                top: 0;
+                right: 0;
+                width: 223px;
+                height: 211px;
+            }
+
+        }
+
+        .steps__step-entry {
+            min-height: 112px;
+
+            @include mq($small) {
+                min-height: 82px;
+
+            }
+
+            @include mq($medium) {
+                min-height: 105px;
+            }
+
+        }
+    }
+
+    &__step_2 {
+
+        @include mq($small) {
+            max-width: 41.5%;
+        }
+
+        @include mq($medium) {
+        }
+
+        .steps__w {
+            background-color: #f06c91;
+
+            @include mq($small) {
+                min-height: 326px;
+            }
+
+            @include mq($medium) {
+                min-height: 420px;
+            }
+        }
+
+        .steps__side-icon {
+            top: -13px;
+            right: -12px;
+            width: 25px;
+            height: 25px;
+            color: #f4c006;
+            @include mq($small) {
+                top: -25px;
+                right: -20px;
+                width: 41px;
+                height: 41px;
+            }
+
+            @include mq($medium) {
+                right: -25px;
+                width: 51px;
+                height: 51px;
+            }
+
+        }
+
+        .steps__step-quant {
+            color: #f06c91;
+        }
+
+        .steps__step-icon {
+            margin-top: -22px;
+            margin-right: 18px;
+            margin-bottom: 42px;
+            margin-left: auto;
+            width: 189px;
+            height: 122px;
+            @include mq($small) {
+                margin-top: -18px;
+                margin-right: 30px;
+                margin-bottom: 0;
+                margin-left: auto;
+                width: 133px;
+                height: 98px;
+            }
+
+            @include mq($medium) {
+                margin-top: -43px;
+                margin-right: 52px;
+                margin-left: auto;
+                width: 232px;
+                height: 171px;
+            }
+
+        }
+
+        .steps__step-entry {
+            min-height: 180px;
+            @include mq($small) {
+                min-height: 135px;
+            }
+
+            @include mq($medium) {
+                min-height: 130px;
+            }
+        }
+
+    }
+
+    &__step_3 {
+
+        @include mq($small) {
+            max-width: 50%;
+        }
+
+        @include mq($medium) {
+        }
+
+        .steps__w {
+            margin-bottom: 46px;
+            background-image: linear-gradient(54deg, #ff8045 0%, #fda556 115%);
+            @include mq($small) {
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .steps__side-icon {
+            top: -12px;
+            left: -45px;
+            width: 73px;
+            height: 73px;
+            fill: transparent;
+            @include mq($small) {
+                top: 52px;
+                left: -30px;
+                width: 63px;
+                height: 63px;
+            }
+
+            @include mq($medium) {
+                top: 102px;
+                left: -40px;
+                width: 83px;
+                height: 83px;
+            }
+
+        }
+
+        .steps__step-quant {
+            color: #ff8a4a;
+        }
+
+        .steps__step-icon {
+            margin-top: -24px;
+            margin-right: 8px;
+            margin-bottom: 43px;
+            margin-left: auto;
+            width: 194px;
+            height: 159px;
+            @include mq($small) {
+                margin-right: 35px;
+                margin-bottom: 0;
+                width: 124px;
+                height: 109px;
+            }
+
+            @include mq($medium) {
+                margin-top: -46px;
+                margin-right: 60px;
+                width: 216px;
+                height: 191px;
+            }
+
+        }
+
+        .steps__step-entry {
+            min-height: 146px;
+            @include mq($small) {
+                min-height: 135px;
+            }
+
+            @include mq($medium) {
+                min-height: 130px;
+            }
+        }
+
+
+        .steps__step-title {
+            padding-right: 80px;
+            @include mq($small) {
+
+            }
+
+            @include mq($medium) {
+                padding-right: 0;
+
+            }
+        }
+
+    }
+
+    &__step_4 {
+        @include mq($small) {
+            max-width: 50%;
+        }
+
+        @include mq($medium) {
+        }
+
+        .steps__w {
+            background-image: linear-gradient(235deg, #7f7eff 102%, #7e7de8 0%);
+        }
+
+        .steps__side-icon {
+            top: 186px;
+            right: -50px;
+            width: 98px;
+            height: 70px;
+
+            @include mq($small) {
+                top: 135px;
+                right: -53px;
+                width: 100px;
+                height: 76px;
+
+            }
+
+            @include mq($medium) {
+                top: 164px;
+                right: -83px;
+                width: 134px;
+                height: 109px;
+            }
+
+        }
+
+        .steps__step-quant {
+            color: #7f7eef;
+        }
+
+        .steps__step-entry {
+            max-width: 270px;
+            min-height: 92px;
+
+            @include mq($small) {
+                min-height: 82px;
+
+            }
+
+            @include mq($medium) {
+                max-width: 440px;
+                min-height: 130px;
+            }
+
+        }
+
+        .steps__step-icon {
+            position: relative;
+            right: 30px;
+            margin-top: 18px;
+            margin-right: auto;
+            margin-bottom: 59px;
+            margin-left: auto;
+            width: 360px;
+            height: 152px;
+            @include mq($small) {
+                right: 0;
+                margin-top: 8px;
+                margin-bottom: 0;
+
+                width: 140px;
+                height: 106px;
+            }
+
+            @include mq($medium) {
+                margin-top: 0;
+                width: 244px;
+                height: 184px;
+            }
+        }
+    }
+
+    &__step-quant {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        width: 27px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 1;
+        border-radius: 50%;
+        &:before {
+            content: counter(count);
+        }
+
+        @include mq($small) {
+            top: 16px;
+        }
+
+        @include mq($medium) {
+            top: 30px;
+            left: 30px;
+            width: 47px;
+            height: 47px;
+            font-size: 25px;
+        }
+    }
+
+    &__step-icon {
+        display: flex;
+    }
+
+    &__step-entry {
+        margin-top: auto;
+        max-width: 340px;
+        min-height: 130px;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            max-width: 540px;
+        }
+    }
+
+    &__step-title {
+        margin-bottom: 10px;
+        @include font-size(16px);
+        font-weight: bold;
+        line-height: normal;
+        letter-spacing: -0.08px;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            @include font-size(24px);
+            letter-spacing: -0.12px;
+
+        }
+    }
+
+    &__step-text {
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.4;
+        letter-spacing: -0.06px;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            font-size: 16px;
+            letter-spacing: -0.08px;
+
+        }
+    }
+
+    &__side-icon {
+        z-index: -1;
+        position: absolute;
+    }
+}
+
+
+// .steps_eng {
+//     .steps__title {
+//         max-width: 525px;
+
+//         @include mq($small) {
+//             margin-bottom: 70px;
+//             max-width: 525px;
+//         }
+
+//         @include mq($medium) {
+//             max-width: 665px;
+//         }
+//     }
+// }
