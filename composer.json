@@ -1,0 +1,17 @@
+{
+    "name": "sergey/zdorovaya-natciya",
+    "autoload": {
+        "psr-4": {
+            "Sergey\\ZdorovayaNatciya\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Igor Gorlov",
+            "email": "gorlov35@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

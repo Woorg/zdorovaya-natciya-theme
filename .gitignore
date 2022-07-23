@@ -1,4 +1,4 @@
-wp-config.php
+.env
 
 wp-content/debug.log
 wp-content/cache
@@ -22,3 +22,5 @@ wp-content/cache
 /wp-content/themes/zdorovaya-natciya/front/.vscode
 /wp-content/themes/zdorovaya-natciya/front/.idea
 /wp-content/themes/zdorovaya-natciya/front/package-lock.json
+
+/vendor/
